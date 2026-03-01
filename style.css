@@ -1,0 +1,78 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Comfortaa', cursive;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  position: relative;
+}
+
+/* Menu button */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Channel name center */
+.channel-name {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  flex: 1;
+  color: #ff4d6d;
+}
+
+/* Logo right */
+.logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Tagline / line */
+.tagline {
+  text-align: center;
+  padding: 5px 0;
+  font-size: 0.9rem;
+  border-bottom: 1px solid #333;
+  color: #aaa;
+}
+
+/* Menu (hidden by default) */
+nav#menu {
+  display: none;
+  flex-direction: column;
+  background: #222;
+  position: absolute;
+  top: 70px; /* below header */
+  left: 0;
+  width: 100%;
+}
+
+nav#menu a {
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav#menu a:hover {
+  background: #ff4d6d;
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .channel-name {
+    font-size: 1.8rem;
+  }
+}

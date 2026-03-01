@@ -48,13 +48,14 @@ header {
 
 /* Menu (hidden by default) */
 nav#menu {
-  display: none;
+  display: none; /* hidden initially */
   flex-direction: column;
   background: #222;
   position: absolute;
   top: 70px; /* below header */
   left: 0;
   width: 100%;
+  z-index: 1000;
 }
 
 nav#menu a {
@@ -68,6 +69,11 @@ nav#menu a {
 nav#menu a:hover {
   background: #ff4d6d;
   color: white;
+}
+
+/* Show menu when active */
+nav#menu.show {
+  display: flex;
 }
 
 /* Responsive */

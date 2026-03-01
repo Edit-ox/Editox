@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editox</title>
+  <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <!-- Left: Menu Button -->
+  <div class="menu-btn" onclick="toggleMenu()">
+    🍔
+  </div>
+
+  <!-- Center: Channel Name -->
+  <div class="channel-name">Editox</div>
+
+  <!-- Right: Logo -->
+  <div class="logo">
+    <img src="logo.png" alt="Editox Logo">
+  </div>
+</header>
+
+<!-- One-line tagline / separator -->
+<div class="tagline">Premium Editing Assets for Creators</div>
+
+<!-- Hidden menu -->
+<nav id="menu">
+  <a href="#">Home</a>
+  <a href="#">Overlays</a>
+  <a href="#">Presets</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+</nav>
+
+<!-- <script src="script.js"></script> -->
+  function toggleMenu() {
+  const menu = document.getElementById('menu');
+  if(menu.style.display === 'flex') {
+    menu.style.display = 'none';
+  } else {
+    menu.style.display = 'flex';
+  }
+}
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+8<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -8,15 +8,38 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
   <style>
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  text-align: left;
-  padding: 10px 15px;
   background: #0f0f0f;
-  color: #777;
+  padding: 25px 10px 15px;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+/* Social Media Section */
+.social-section {
+  margin-bottom: 10px;
+}
+
+.social-section a {
+  margin: 0 12px;
+  display: inline-block;
+}
+
+.social-section img {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0.8);
+  transition: 0.3s;
+}
+
+.social-section img:hover {
+  filter: brightness(1.5);
+  transform: scale(1.1);
+}
+
+/* Copyright */
+.copyright {
   font-size: 12px;
+  color: #777;
 }
   </style>
 </head>
@@ -54,23 +77,21 @@ footer {
   }
 </script>
 <footer>
-  
-  <div class="footer-content">
-    <p>© 2026 CineEditography. All Rights Reserved.</p>
-    <p>Crafting Cinematic Visual Stories.</p>
-    
-    <div class="footer-links">
-      <a href="index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-
-    <div class="social-links">
-      <a href="#">Instagram</a>
-      <a href="#">YouTube</a>
-      <a href="#">GitHub</a>
-    </div>
+  <div class="social-section">
+    <a href="#">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+    <a href="#">
+      <img src="youtube.png" alt="YouTube">
+    </a>
+    <a href="#">
+      <img src="github.png" alt="GitHub">
+    </a>
   </div>
+
+  <p class="copyright">
+    © 2026 CineEditography. All Rights Reserved.
+  </p>
 </footer>
 </body>
 </html>

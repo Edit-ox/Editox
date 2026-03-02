@@ -57,6 +57,13 @@ nav#menu {
   width: 100%;
   z-index: 1000;
 }
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
+}
 
 nav#menu a {
   padding: 12px 20px;

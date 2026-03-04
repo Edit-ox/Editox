@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photo Editing | Adhi Editz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* Header */
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.portfolio img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+}
+
+/* Before After Section */
+.before-after {
+    padding: 40px;
+    text-align: center;
+}
+
+.before-after h2 {
+    font-family: 'Bebas Neue';
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.compare {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.compare img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Pricing */
+.pricing {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.price-card {
+    display: inline-block;
+    border: 1px solid #facc15;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    transition: 0.3s ease;
+}
+
+.price-card:hover {
+    background: #facc15;
+    color: black;
+}
+
+.price-card h3 {
+    margin-bottom: 10px;
+}
+
+.price-card p {
+    font-size: 14px;
+}
+
+/* CTA Button */
+.cta {
+    text-align: center;
+    padding: 40px;
+}
+
+.cta a {
+    text-decoration: none;
+    background: #facc15;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.cta a:hover {
+    background: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Professional Photo Editing</h1>
+    <p>High Quality • Cinematic • Social Media Ready</p>
+</header>
+
+<!-- Portfolio Gallery -->
+<section class="portfolio">
+    <img src="edit1.jpg" alt="Photo Edit 1">
+    <img src="edit2.jpg" alt="Photo Edit 2">
+    <img src="edit3.jpg" alt="Photo Edit 3">
+    <img src="edit4.jpg" alt="Photo Edit 4">
+</section>
+
+<!-- Before After Section -->
+<section class="before-after">
+    <h2>Before & After</h2>
+    <div class="compare">
+        <img src="before.jpg" alt="Before Edit">
+        <img src="after.jpg" alt="After Edit">
+    </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+    <h2 style="font-family: Bebas Neue;">Pricing</h2>
+
+    <div class="price-card">
+        <h3>Basic Edit</h3>
+        <p>Color Correction</p>
+        <p>Skin Retouch</p>
+        <p><strong>₹199</strong></p>
+    </div>
+
+    <div class="price-card">
+        <h3>Advanced Edit</h3>
+        <p>Cinematic Tone</p>
+        <p>Background Enhancement</p>
+        <p><strong>₹399</strong></p>
+    </div>
+
+    <div class="price-card">
+        <h3>Premium Edit</h3>
+        <p>Full Manipulation</p>
+        <p>Professional Retouch</p>
+        <p><strong>₹799</strong></p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Want Professional Photo Editing?</h2>
+    <a href="mailto:yourmail@gmail.com">Hire Me Now</a>
+</section>
+
+<footer>
+    © 2026 Adhi Editz | All Rights Reserved
+</footer>
+
+</body>
+</html>

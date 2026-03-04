@@ -13,13 +13,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <style>
-  .top-back {
+.top-back {
     position: absolute;
     top: 25px;
     right: 40px;
-}
-
-.top-back a {
     text-decoration: none;
     color: #ffffff;
     border: 1px solid #facc15;
@@ -27,12 +24,14 @@
     border-radius: 6px;
     font-size: 14px;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
-.top-back a:hover {
+.top-back:hover {
     background: #facc15;
     color: #000;
 }
+  
 body {
   margin: 0;
   min-height: 100vh;
@@ -157,7 +156,9 @@ footer {
 <body>
 
 <header>
-  <div class="top-back" onclick="toggleMenu()"> ☰ </div>
+  <div class="top-back">
+   <a href="index.html">☰ Home</a>
+  </div>
  <!--- <div class="menu-btn" onclick="toggleMenu()"> ☰ </div>-->
   <div class="channel-name">Editox</div>
   <div class="logo">

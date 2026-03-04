@@ -13,25 +13,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 <style>
-.top-back {
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    text-decoration: none;
-    color: #ffffff;
-    border: 1px solid #facc15;
-    padding: 8px 18px;
-    border-radius: 6px;
-    font-size: 14px;
-    transition: 0.3s ease;
-    cursor: pointer;
+/* Hide menu by default */
+#menu {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  padding: 10px 20px;
 }
 
-.top-back:hover {
-    background: #facc15;
-    color: #000;
+#menu a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  display: block;
+  transition: 0.3s ease;
 }
-  
+
+#menu a:hover {
+  color: #facc15;
+}
+
+/* Show class */
+#menu.show {
+  display: flex;
+}
+
+/* Top button styling */
+.top-back {
+  position: absolute;
+  top: 25px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.top-back a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #facc15;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.top-back a:hover {
+  background: #facc15;
+  color: #000;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -156,10 +184,14 @@ footer {
 <body>
 
 <header>
-  <div class="top-back">
+ <!-- <div class="top-back">
    <a href="index.html">☰ Home</a>
   </div>
- <!--- <div class="menu-btn" onclick="toggleMenu()"> ☰ </div>-->
+  <div class="menu-btn" onclick="toggleMenu()"> ☰ </div>-->
+    <div class="top-back" onclick="toggleMenu()">
+   <a href="javascript:void(0)">☰ Home</a>
+    </div>
+    
   <div class="channel-name">Editox</div>
   <div class="logo">
     <img src="Black and White Minimalist Modern Creative Design Logo_20260301_202204_0000.png" alt="Editox Logo">
@@ -175,6 +207,8 @@ footer {
   <a href="#">.....</a>
   <a href="#">.....</a>
 </nav>
+
+
 
 <div class="image-box">
   <img src="pexels-mikebirdy-132774.jpg" alt="Cinematic Edit">
@@ -208,7 +242,6 @@ function toggleMenu() {
   menu.classList.toggle('show');
 }
 </script>
-
 <footer>
   <div class="social-section">
     <a href="https://www.instagram.com/editox.x?igsh=d2VhdXJzY201azNx" target="_blank">
